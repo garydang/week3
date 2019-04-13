@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Background">
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginTop="10dp"
+                  android:id="@+id/custom1">
+
+
+        <ImageView
+                android:layout_width="150dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="120dp"
+                android:contentDescription="this_is_imageview"
+                android:id="@+id/displayBackground"
+                android:layout_height="150dp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.LinearLayoutCompat android:layout_width="match_parent"
+                                                  android:layout_height="wrap_content"
+                                                  android:id="@+id/custom2"
+                                                  android:layout_marginTop="20dp"
+                                                  android:layout_below="@id/custom1">
+        <Button
+                android:layout_width="45dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/setBackGroundKotlin"
+                android:background="@drawable/kotlin"
+                android:layout_weight="1"
+        />
+        <Button
+                android:layout_width="90dp"
+                android:layout_height="105dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/setBackGroundAngular"
+                android:background="@drawable/angular"
+                android:layout_weight="1"
+        />
+        <Button
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:id="@+id/setBackGroundFlutter"
+                android:background="@drawable/flutter"
+                android:layout_weight="1"
+        />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat android:layout_width="match_parent"
+                                                  android:layout_height="wrap_content"
+                                                  android:id="@+id/custom3"
+                                                  android:layout_below="@id/custom2"
+                                                  android:layout_alignParentStart="true"
+                                                  android:layout_marginTop="5dp">
+        <Button
+                android:layout_width="1dp"
+                android:layout_height="90dp"
+                android:id="@+id/setBackGroundGolang"
+                android:background="@drawable/golang"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+        />
+        <Button
+                android:layout_width="1dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="0dp"
+                android:id="@+id/setBackGroundJavascript"
+                android:background="@drawable/javascript"
+                android:layout_weight="1"
+        />
+        <Button
+                android:layout_width="1dp"
+                android:layout_height="90dp"
+                android:id="@+id/setBackGroundPython"
+                android:background="@drawable/python"
+                android:layout_weight="1"
+        />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+    <Button
+            android:text="Save"
+            android:layout_below="@id/custom3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/save"/>
+
+</RelativeLayout>
